@@ -30,7 +30,7 @@ const addCards = (items) => {
 
 const addCat = (cat) => {
     $.ajax({
-        url: '/api/cat',
+        url: '/api/cats',
         type: 'POST',
         data: JSON.stringify(cat),
         contentType: "application/json; charset=utf-8",
