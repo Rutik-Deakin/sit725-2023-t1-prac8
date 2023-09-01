@@ -52,6 +52,13 @@ function getAllCats() {
         }
     })
 }
+
+let socket =  io();
+
+socket.on('number', (number) => {
+    console.log(`This number from server is: ${number}`);
+});
+
 $(document).ready(function () {
     $('.materialboxed').materialbox();
     $('#formSubmit').click(() => {
